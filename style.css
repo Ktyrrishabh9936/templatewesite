@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    position: sticky;
+    top:0px;
+    left: 0px;
+    /* z-index: 6; */
+}
+.logo img{
+    border-radius: 150px;
+    padding: 12px 14px;
+}
+.nav-list {
+    font-size: 16px;
+    display: flex;
+    width: 70%;
+}
+.nav-list li{
+    padding: 14px;
+    margin: 5px 12px;
+    list-style: none;
+    border-radius: 11px;
+}
+.nav-list li:hover
+{
+    background: rgb(137, 131, 131); 
+    color: wheat;
+}
+.nav-list li a
+{
+    text-decoration: none;
+    color: aquamarine;
+}
+.flex{
+    display: flex;
+}
+.item-center{
+    align-items: center;
+}
+.con-center{
+    justify-content: center;
+}
+
+.rightnav{
+    width: 30%;
+    justify-content:flex-end;
+}
+.rightnav input{
+    padding: 8px 13px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.btn-sm{
+    padding: 6px 17px;
+    border-radius: 8px;
+    background-color: rgba(128, 255, 0, 0.662);
+}
+.background{
+    background:rgb(0,0,0,0.7) url("education2.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.boxmain{
+    margin:0px 30px;
+}
+
+.data{
+    margin: 100px ;
+    padding: 70px 0px;
+}
+.firstsection{
+    padding: 150px 80px;
+    color: beige;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 368px;
+}
+.primary{
+    background-color: rgb(17, 191, 254);
+}
+.rowrev{
+    flex-direction: row-reverse;
+}
+.showcon{
+    border-radius: 40px;
+    padding: 100px 20px;
+    margin: 40px 20px;
+    border: 2px solid red;
+}
+.data{
+    width: 86%;
+    margin: auto;
+}
+.firsthalf{
+    padding: 10px 40px;
+}
+.contactUs{
+    background-color: rgb(218, 239, 228);
+    padding: 40px;
+}
+.contactUs form{
+    flex-direction: column;
+    width: 86%;
+    margin: auto;
+}
+ form input{
+    width: 80%;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin: 15px 0px;
+    background-color: transparent;
+}
+form input[type = "submit"]{
+    width: 150px;
+    padding: 10px 13px;
+    background-color: coral;
+}
+form h2{
+    padding: 20px;
+}
+
+@media (max-width:1100px) {
+    body{
+        background-color: aqua;
+    }
+    .firstsection{
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 35px;
+        height: 457px;
+    }
+    .boxmain{
+    margin: 40px 0px;
+    }
+    .showcon{
+        padding: 70px 14px;
+        margin: 30px 15px;
+    }
+    .data{
+        width: 95%;
+    }
+
+}
+@media (max-width:900px) {
+    .showcon{
+        flex-direction: column;
+    }
+    /* .nav-list{
+        visibility: hidden;
+    }
+    .rightnav{
+        visibility: hidden;
+    } */
+    .nav-list{
+        flex-direction: column;
+        margin: auto;
+    }
+    .nav-list li{
+        width: 100%;
+        text-align: center;
+        pointer-events: none;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .rightnav{
+        margin: auto;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .burgur{
+        background-color: black;
+        width: fit-content;
+        padding: 5px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 5px;
+    }
+    .line{
+        height: 3px;
+        background-color: white;
+        width: 23px;
+        margin: 5px;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        visibility: hidden;
+    }
+
+    .secondhalf img{
+        width: 90%;
+        height: 85%;
+    }
+    .rightnav input{
+        padding: 8px 13px;
+        width: 100%;
+        font-size: 15px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgb(0,0,0,0.7);
+        border: 2px solid white;
+    }
+}
+@media (max-width:470px) {
+    .firstsection{
+        padding: 10px;
+    }
+    .showcon{
+        padding: 5px;
+        border: none;
+    }
+    .firsthalf{
+        padding:10px;
+    }
+    .contactUs{
+        padding: 0px;
+    }
+}
